@@ -6,9 +6,12 @@ export class ServerStart {
     public socketIo: SocketIO.Server;
     public serverOptions: SocketIO.ServerOptions;
 
-    public startServer(): void {
+    public startServer(port: number): void {
         const server = new http.Server(express());
         this.socketIo = socketio(server);
-        console.log('#### Server is running ####');
+
+        server.listen(port, function(){
+            console.log(`#### Server is running on port: ${port} ####`);
+        });
     }
 }
