@@ -1,6 +1,6 @@
 ## Lib 
- - sucrase: responsavel por 'compilar o codigo em typescript para js'
- - nodemon: escuta modificações ao salvar
+ - sucrase: This library is responsible for 'compile' the typescript code to js
+ - nodemon: This library listen changes when save 
 
 ## STACK:
   - Npm Version: 6.12.1
